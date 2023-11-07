@@ -12,55 +12,63 @@
 
   <body>
     <audio src="asset/pianotrio.mp3" controls autoplay></audio>
-    <!-- Ref https://www.reddit.com/r/javascript/comments/dolagh/apple_airpods_pro_page_uses_a_lot_of_images_so_i/ -->
-    <section>
-      <h1 style="color: aliceblue">
-        Brahms, Piano Trio No.1 in B Major, Op. 8 - 4th Mov/
-      </h1>
-      <p style="color: aliceblue">
-        Brahms' Piano Trio No. 1, 4th movement, is sometimes considered a piece
-        inspired by his love for Clara Schumann. The second theme of this
-        movement is believed to have been composed with inspiration from
-        Beethoven's "An die ferne Geliebte" ("To the Distant Beloved") and is
-        thought to encapsulate Brahms' affection and feelings for Clara
-        Schumann. The relationship between Brahms and Clara Schumann was deep
-        and complex, and traces of his inspiration from her can be found in his
-        music. However, it is challenging to assert that music is solely about a
-        particular theme or emotion. Art allows for various interpretations, and
-        Brahms' music, like any other, can carry different meanings depending on
-        individual interpretations and experiences.
-      </p>
-      <video
-        id="video"
-        width="998"
-        height="560"
-        playsinline
-        poster="https://lqez.github.io/js/airpodsvf/video.jpg"
-      >
-        <source
-          src="https://lqez.github.io/js/airpodsvf/video.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
-      <div class="scroll-dummy">
-        <h1>AirPods Pro page is TOO BIG</h1>
-        <p>
-          <a href="https://www.apple.com/kr/airpods-pro/"
-            >https://www.apple.com/kr/airpods-pro/</a
-          >
-          contains 1,500+ images and their size is over 60MiB.
-        </p>
-        <p>
-          I encoded the first 148ea, 4.8MiB of AirPods Pro images into a single
-          1.1MiB x264 video file and put it as a background. The video file has
-          total 148 i-frame frames by ffmpeg's <code>-intra</code> option. It
-          makes much smoother frame changes.
-        </p>
-        <p>Image countesy of Apple, Inc.</p>
-      </div>
-    </section>
 
-    <script type="text/javascript" src="script.js"></script>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="main.css" />
+        <title>Apple Dev Ed Pro</title>
+      </head>
+      <body>
+        <div class="intro">
+          <h1 style="color: aliceblue">
+            Brahms, Piano Trio No.1 in B Major, Op. 8 - 4th Mov/
+          </h1>
+          <p style="color: aliceblue">
+            Brahms' Piano Trio No. 1, 4th movement, is sometimes considered a
+            piece inspired by his love for Clara Schumann. The second theme of
+            this movement is believed to have been composed with inspiration
+            from Beethoven's "An die ferne Geliebte" ("To the Distant Beloved")
+            and is thought to encapsulate Brahms' affection and feelings for
+            Clara Schumann. The relationship between Brahms and Clara Schumann
+            was deep and complex, and traces of his inspiration from her can be
+            found in his music. However, it is challenging to assert that music
+            is solely about a particular theme or emotion. Art allows for
+            various interpretations, and Brahms' music, like any other, can
+            carry different meanings depending on individual interpretations and
+            experiences.
+          </p>
+          <video src="asset/piano.mp4"></video>
+        </div>
+        <section>
+          <h1>REVOLUTIONARRY</h1>
+        </section>
+
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+          integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c="
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"
+          integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI="
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"
+          integrity="sha256-31FC/OT6XpfjAhj9FuXjw5/wPXXawCAjJQ29E23/XPk="
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+          integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+          crossorigin="anonymous"
+        ></script>
+        <script type="text/javascript" src="script.js"></script>
+      </body>
+    </html>
   </body>
 </html>

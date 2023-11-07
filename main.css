@@ -1,48 +1,39 @@
-html {
-  scroll-behavior: smooth;
-}
-body {
+* {
   margin: 0;
-  background: #000;
-  touch-action: pan-y;
-  height: 100vh;
-  overflow: auto;
+  padding: 0;
+  box-sizing: border-box;
 }
-section {
-  display: flex;
-  justify-content: center;
-}
-video {
-  position: fixed;
-  z-index: 0;
-  max-width: 100%;
-}
-.scroll-dummy {
-  height: 2000px;
-  max-width: 998px;
-  padding: 20px;
-  z-index: 1;
+
+body {
   font-family: sans-serif;
 }
 
-.scroll-dummy h1 {
+.intro {
+  height: 100vh;
+}
+
+.intro video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.intro h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 80px;
-  font-weight: 700;
-  padding: 200px 0;
   color: white;
 }
 
-.scroll-dummy p,
-.scroll-dummy a {
-  font-size: 20px;
-  color: #ccc;
-  line-height: 1.4;
+section {
+  height: 100vh;
+  color: black;
 }
 
-code {
-  font-family: monospace;
-  background: #333;
-  border: 1px solid #999;
-  border-radius: 4px;
-  padding: 2px 4px;
+section h1 {
+  padding-top: 300px;
+  text-align: center;
+  font-size: 80px;
 }
