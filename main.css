@@ -6,6 +6,7 @@
 
 body {
   font-family: sans-serif;
+  text-align: center;
 }
 
 .intro {
@@ -13,6 +14,7 @@ body {
 }
 
 .intro video {
+  z-index: 0;
   max-width: 100%;
   object-fit: cover;
 }
@@ -22,10 +24,19 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 80px;
+  font-size: 30px;
   color: white;
 }
 
+.middle {
+  height: 100vh;
+}
+
+.middle video {
+  z-index: 0;
+  max-width: 100%;
+  object-fit: cover;
+}
 section {
   height: 100vh;
   color: black;
