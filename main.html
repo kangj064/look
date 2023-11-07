@@ -12,47 +12,39 @@
 
   <body>
     <audio src="asset/pianotrio.mp3" controls autoplay></audio>
-    <div class="container scroll-container">
-      <section class="scroll-sequence__container apple-container">
-        <div class="scroll-sequence apple-sequence"></div>
-        <div class="scroll-sequence__content">
-          <div class="speak">
-            <h1>Apple's Scroll Sequence</h1>
-            <p>Just start scrolling the page now...</p>
-          </div>
-          <div class="speak">
-            
-            <h1>This is Apple's image sequence</h1>
-            <p>Please don't sue me! I am just testing 'm able to do the animation stuff like apple do ¯\_(ツ)_/¯</p>
-          </div>
-          <div class="speak">
-            <h1>The Text Animation</h1>
-            <p>Is created with Scroll-out.js. Go check it out!</p>
-          </div>
-        </div>
-      </section>
-    <!--   <div class="spacer" style="height: 80vh"></div> -->
-      <section class="scroll-sequence__container tree-container">
-        <div class="scroll-sequence tree-sequence"></div>
-        <div class="scroll-sequence__content">
-          <div class="speak">
-            <h1>This took me a while</h1>
-            <p>To get right, but here it is!</p>
-          </div>
-          <div class="speak">
-            <h1>Apple's images load faster</h1>
-            <p>Not a good idea to use forest image, too much detail and compression sucks! :P</p>
-          </div>
-          <div class="speak">
-            <h1>Running out of things</h1>
-            <p>But hey! we can do Apple's animation.</p>
-          </div>
-      </section>
-      <div class="spacer"></div>
-    </div>
+    <!-- Ref https://www.reddit.com/r/javascript/comments/dolagh/apple_airpods_pro_page_uses_a_lot_of_images_so_i/ -->
+    <section>
+      <video
+        id="video"
+        width="998"
+        height="560"
+        playsinline
+        poster="https://lqez.github.io/js/airpodsvf/video.jpg"
+      >
+        <source
+          src="https://lqez.github.io/js/airpodsvf/video.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+      <div class="scroll-dummy">
+        <h1>AirPods Pro page is TOO BIG</h1>
+        <p>
+          <a href="https://www.apple.com/kr/airpods-pro/"
+            >https://www.apple.com/kr/airpods-pro/</a
+          >
+          contains 1,500+ images and their size is over 60MiB.
+        </p>
+        <p>
+          I encoded the first 148ea, 4.8MiB of AirPods Pro images into a single
+          1.1MiB x264 video file and put it as a background. The video file has
+          total 148 i-frame frames by ffmpeg's <code>-intra</code> option. It
+          makes much smoother frame changes.
+        </p>
+        <p>Image countesy of Apple, Inc.</p>
+      </div>
+    </section>
 
-
-    
     <h1>Brahms, Piano Trio No.1 in B Major, Op. 8 - 4th Mov/</h1>
     <p>
       Brahms' Piano Trio No. 1, 4th movement, is sometimes considered a piece
@@ -68,25 +60,6 @@
       interpretations and experiences.
     </p>
 
-
     <script type="text/javascript" src="script.js"></script>
-
-    <div class="box"></div>
-<div class="box box2"></div>
-<div class="box"></div>
-<div class="box box2"></div>
-<div class="box"></div>
-<div class="box box2"></div>
-<div class="box"></div>
-<div class="box box2"></div>
-<div class="box"></div>
-<div class="box box2"></div>
-<div class="box"></div>
-<div class="box box2"></div>
-<div class="box"></div>
-<div class="box box2"></div>
-<div class="box"></div>
-<div class="box box2"></div>
-
   </body>
 </html>
